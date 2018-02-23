@@ -1,0 +1,19 @@
+{
+  "name": "gateway-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js production",
+    "start-dev": "node server.js development",
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "mocha": "5.0.1",
+    "request": "2.83.0"
+  }
+}
