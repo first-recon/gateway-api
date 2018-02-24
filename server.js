@@ -8,6 +8,6 @@ server.use(bodyParser.json());
 
 const config = require('./config');
 
-server.get('/', (req, res) => proxy(req, res, request));
+server.get('/*', (req, res) => proxy(req, res, request));
 
 server.listen(config.port);
