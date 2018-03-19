@@ -10,4 +10,6 @@ const config = require('./config');
 
 server.get('/*', (req, res) => proxy(req, res, request));
 
-server.listen(config.port);
+server.listen(config.port, () => {
+    console.log(`Listening on port ${config.port}...`);
+});

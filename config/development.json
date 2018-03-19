@@ -8,6 +8,10 @@
         "teams": {
             "host": "localhost",
             "port": 3002
+        },
+        "matches": {
+            "host": "localhost",
+            "port": 3003
         }
     }
 }
