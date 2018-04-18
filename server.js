@@ -9,6 +9,7 @@ server.use(bodyParser.json());
 const config = require('./config');
 
 server.get('/*', (req, res) => proxy(req, res, request));
+server.post('/*', (req, res) => proxy(req, res, request));
 
 server.listen(config.port, () => {
     console.log(`Listening on port ${config.port}...`);
